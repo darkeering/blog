@@ -1,0 +1,17 @@
+{
+  "name": "blog-dar",
+  "version": "2.0.0",
+  "description": "Darkeering Blog",
+  "repository": "git@github.com:recoluan/vuepress-theme-reco-demo.git",
+  "author": "darkeering <darkeering@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "start": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "dependencies": {
+    "vuepress": "2.0.0-beta.62",
+    "vuepress-theme-reco": "2.0.0-beta.65"
+  }
+}
