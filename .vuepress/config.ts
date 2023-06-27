@@ -14,11 +14,15 @@ export default defineUserConfig({
     docsBranch: "main",
     docsDir: "example",
     lastUpdatedText: "",
+    catalogTitle: '导航',
+    // autoSetSeries: true,
+    displayAllHeaders: false,
     // series 为原 sidebar
     series: {
       "/": [
         {
-          text: "module-federation",
+          text: "Module Federation",
+          collapsable: true,
           children: [
             {
               text: '创建基础环境',
@@ -42,20 +46,91 @@ export default defineUserConfig({
             },
           ]
         },
+        {
+          text: "JS",
+          collapsable: true,
+          children: [
+            {
+              text: '手写简易深拷贝',
+              link: "/docs/js/deep-clone"
+            },
+            {
+              text: '链式调用',
+              link: "/docs/js/chained-calls"
+            },
+            {
+              text: '手写简易Promise',
+              link: "/docs/js/promise"
+            },
+          ]
+
+        },
+        {
+          text: "React",
+          collapsable: true,
+          children: [
+            {
+              text: 'React 类似 Angular service 的状态管理',
+              link: "/docs/react/hooks-context-state"
+            },
+          ]
+
+        },
+        {
+          text: "Http",
+          collapsable: true,
+          children: [
+            {
+              text: 'https 通过nginx完成双向认证转发',
+              link: "/docs/http/nginx-certificate"
+            },
+          ]
+
+        },
+        {
+          text: "qiankun",
+          collapsable: true,
+          children: [
+            {
+              text: 'qiankun 基座应用',
+              link: "/docs/qiankun/qiankun-base"
+            },
+            {
+              text: 'qiankun angular子应用',
+              link: "/docs/qiankun/qiankun-ng-child"
+            },
+            {
+              text: 'qiankun react子应用',
+              link: "/docs/qiankun/qiankun-rc-child"
+            },
+          ]
+
+        },
+        {
+          text: "其他",
+          collapsable: true,
+          children: [
+            {
+              text: 'vscode的终端设置成gitbash',
+              link: "/docs/other/vscode-gitbash"
+            },
+          ]
+
+        },
       ],
     },
     navbar: [
-      { text: "Home", link: "/" },
+      { text: "主页", link: "/" },
       {
-        text: "Docs",
+        text: "文章",
         link: "/docs/module-federation/create-env",
         // children: [
         //   { text: "前端", link: "/docs/front-end/" },
         //   { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
         // ],
       },
-      { text: "Categories", link: "/categories/reco/1/" },
-      { text: "Tags", link: "/tags/tag1/1/" },
+      { icon: 'LogoGithub', link: 'https://github.com/darkeering' },
+      // { text: "Tags", link: "/tags/tag1/1/" },
     ],
     // bulletin: {
     //   body: [
