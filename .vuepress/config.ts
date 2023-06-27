@@ -15,7 +15,6 @@ export default defineUserConfig({
     docsDir: "example",
     lastUpdatedText: "",
     catalogTitle: '导航',
-    // autoSetSeries: true,
     displayAllHeaders: false,
     // series 为原 sidebar
     series: {
